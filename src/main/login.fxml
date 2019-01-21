@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.LoginController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="578.0" prefWidth="800.0">
+         <children>
+            <TextField fx:id="nickInput" layoutX="315.0" layoutY="263.0" />
+            <Label layoutX="226.0" layoutY="267.0" text="Nickname:" />
+            <Label layoutX="226.0" layoutY="313.0" text="Password:" />
+            <Label layoutX="349.0" layoutY="132.0" text="Login">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Button layoutX="364.0" layoutY="353.0" mnemonicParsing="false" onAction="#login" text="Login" />
+            <Label layoutX="226.0" layoutY="442.0" text="You dont have an account?" />
+            <Button layoutX="374.0" layoutY="438.0" mnemonicParsing="false" onAction="#register" text="Register" />
+            <TextField fx:id="userInput" layoutX="315.0" layoutY="224.0" />
+            <Label layoutX="227.0" layoutY="228.0" text="Username" />
+            <PasswordField fx:id="passInput" layoutX="313.0" layoutY="309.0" />
+            <Button layoutX="724.0" layoutY="525.0" mnemonicParsing="false" onAction="#switchAdmin" text="ADMIN" />
+            <Button layoutX="14.0" layoutY="525.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+            <Label fx:id="errorLabel" layoutX="373.0" layoutY="529.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

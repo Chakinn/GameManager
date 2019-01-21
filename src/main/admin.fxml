@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.AdminController">
+   <children>
+      <Button layoutX="217.0" layoutY="70.0" mnemonicParsing="false" onAction="#addMatchRecord" text="Match" />
+      <Button layoutX="671.0" layoutY="70.0" mnemonicParsing="false" onAction="#addFriend" text="Friend" />
+      <Button layoutX="217.0" layoutY="207.0" mnemonicParsing="false" onAction="#addAchievement" text="Achievement" />
+      <TextField fx:id="mp1" layoutX="45.0" layoutY="45.0" />
+      <TextField fx:id="mp2" layoutX="45.0" layoutY="83.0" />
+      <TextField fx:id="mwin" layoutX="45.0" layoutY="119.0" />
+      <TextField fx:id="fp1" layoutX="505.0" layoutY="45.0" />
+      <TextField fx:id="fp2" layoutX="505.0" layoutY="83.0" />
+      <TextField fx:id="ap" layoutX="45.0" layoutY="194.0" />
+      <TextField fx:id="aa" layoutX="45.0" layoutY="232.0" />
+      <Button layoutX="26.0" layoutY="540.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button layoutX="712.0" layoutY="500.0" mnemonicParsing="false" onAction="#backup" text="Backup" />
+      <Button layoutX="719.0" layoutY="540.0" mnemonicParsing="false" onAction="#loadDB" text="Load" />
+      <TextField fx:id="cl" layoutX="505.0" layoutY="194.0" />
+      <TextField fx:id="cn" layoutX="505.0" layoutY="224.0" />
+      <Button layoutX="670.0" layoutY="207.0" mnemonicParsing="false" onAction="#addClan" text="Clan" />
+      <Label layoutX="90.0" layoutY="22.0" text="Add match" />
+      <Label layoutX="73.0" layoutY="168.0" text="Add achievement" />
+      <Label layoutX="566.0" layoutY="22.0" text="Add friend" />
+      <Label layoutX="566.0" layoutY="168.0" text="Add clan" />
+      <Label layoutX="12.0" layoutY="49.0" text="p1ID" />
+      <Label layoutX="13.0" layoutY="87.0" text="p2ID" />
+      <Label layoutX="7.0" layoutY="123.0" text="winner" />
+      <Label layoutX="12.0" layoutY="198.0" text="pID" />
+      <Label layoutX="12.0" layoutY="236.0" text="aID" />
+      <Label layoutX="471.0" layoutY="49.0" text="p1ID" />
+      <Label layoutX="471.0" layoutY="87.0" text="p2ID" />
+      <Label layoutX="462.0" layoutY="199.0" text="leaderID" />
+      <Label layoutX="469.0" layoutY="228.0" text="name" />
+      <Label fx:id="errorLabel" layoutX="352.0" layoutY="544.0" textFill="#ff0101">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cu" layoutX="505.0" layoutY="257.0" />
+   </children>
+</AnchorPane>
