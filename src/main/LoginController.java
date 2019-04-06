@@ -118,5 +118,8 @@ public class LoginController
     }
 
 
+    private void branchTest() {
+        System.out.print("nof");
+    }
 
 }
